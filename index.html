@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NTS Website Redesign</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <div class="logo">
+        <img src="logo.png" alt="NTS Global Logo" />
+        <span>NTS Global</span>
+      </div>
+      <nav class="nav-links" id="navLinks">
+        <a href="#" data-i18n="nav_home">Home</a>
+        <a href="#" class="active" data-i18n="nav_about">About Us</a>
+        <a href="#" data-i18n="nav_services">Services</a>
+        <a href="#" data-i18n="nav_careers">Careers</a>
+        <a href="#" data-i18n="nav_contact">Contact</a>
+        <a href="#" data-i18n="nav_blog">Blog</a>
+      </nav>
+      <!-- Language Dropdown -->
+      <div class="language-dropdown">
+        <select id="language-selector" onchange="handleLanguageChange(this)">
+         <option value="en">🌐 English</option>
+         <option value="ja">🇯🇵 Japanese (日本語)</option>
+         <option value="hi">🇮🇳 Hindi (हिन्दी)</option>
+         <option value="es">🇪🇸 Spanish (Español)</option>
+         <option value="fr">🇫🇷 French (Français)</option>
+         <option value="de">🇩🇪 German (Deutsch)</option>
+       </select>
+      </div>
+      <div class="menu-toggle" id="menuToggle">☰</div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section fade-up">
+    <div class="container">
+      <h1 data-i18n="hero_heading">Innovating Tomorrow,<br><span>Together</span></h1>
+      <p data-i18n="hero_subtext">At NTS Website Redesign, we are dedicated to crafting exceptional digital experiences.</p>
+      <div class="hero-buttons">
+        <a href="#" class="btn primary" data-i18n="btn_services">Explore Our Services</a>
+        <a href="#" class="btn secondary" data-i18n="btn_join">Join Our Team</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Purpose Section -->
+  <section class="purpose-section fade-up">
+    <div class="container">
+      <h2 data-i18n="purpose_title">Our Purpose</h2>
+      <div class="purpose-cards">
+        <div class="card">
+          <div class="icon">🎯</div>
+          <h3 data-i18n="purpose_mission_title">Our Mission</h3>
+          <p data-i18n="purpose_mission_text">Empowering businesses and communities through digital solutions.</p>
+        </div>
+        <div class="card">
+          <div class="icon">👁️</div>
+          <h3 data-i18n="purpose_vision_title">Our Vision</h3>
+          <p data-i18n="purpose_vision_text">To be a global leader in transformative digital experiences.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Journey: Key Milestones -->
+  <section class="timeline-section fade-up">
+    <div class="container">
+      <h2 data-i18n="timeline_title">Our Journey: Key Milestones</h2>
+      <div class="timeline">
+        <div class="timeline-item"><span class="year">2008</span><h3 data-i18n="timeline_2008_title">NTS Founded</h3><p data-i18n="timeline_2008_text">Established with a vision to innovate through technology.</p></div>
+        <div class="timeline-item"><span class="year">2012</span><h3 data-i18n="timeline_2012_title">First Major Client</h3><p data-i18n="timeline_2012_text">Expanded reach with our first enterprise partner.</p></div>
+        <div class="timeline-item"><span class="year">2015</span><h3 data-i18n="timeline_2015_title">Launched Kaamigo</h3><p data-i18n="timeline_2015_text">Revolutionized the gig economy platform.</p></div>
+        <div class="timeline-item"><span class="year">2018</span><h3 data-i18n="timeline_2018_title">Tokyo Office</h3><p data-i18n="timeline_2018_text">First international expansion to Japan.</p></div>
+        <div class="timeline-item"><span class="year">2021</span><h3 data-i18n="timeline_2021_title">Agrowings Award</h3><p data-i18n="timeline_2021_text">Recognized for AI-powered agriculture tech.</p></div>
+        <div class="timeline-item"><span class="year">2023</span><h3 data-i18n="timeline_2023_title">Sustainability</h3><p data-i18n="timeline_2023_text">Integrated eco-friendly practices in our tech.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Leadership Section -->
+  <section class="team-section fade-up">
+    <div class="container">
+      <h2 data-i18n="team_title">Meet Our Leadership</h2>
+      <div class="team-cards">
+        <div class="team-member"><div class="avatar"><img src="https://via.placeholder.com/150" alt="Alice Johnson"></div><h4>Alice Johnson</h4><p class="role">CEO</p><p data-i18n="team_ceo">Leading NTS towards innovation and growth.</p></div>
+        <div class="team-member"><div class="avatar"><img src="https://via.placeholder.com/150" alt="Robert Chen"></div><h4>Robert Chen</h4><p class="role">CTO</p><p data-i18n="team_cto">Architecting our technology roadmap.</p></div>
+        <div class="team-member"><div class="avatar"><img src="https://via.placeholder.com/150" alt="Sarah Lee"></div><h4>Sarah Lee</h4><p class="role">Marketing Head</p><p data-i18n="team_marketing">Shaping our global brand story.</p></div>
+        <div class="team-member"><div class="avatar"><img src="https://via.placeholder.com/150" alt="David Kim"></div><h4>David Kim</h4><p class="role">Operations Director</p><p data-i18n="team_ops">Driving operational excellence.</p></div>
+        <div class="team-member"><div class="avatar"><img src="https://via.placeholder.com/150" alt="Emily White"></div><h4>Emily White</h4><p class="role">HR Chief</p><p data-i18n="team_hr">Creating a thriving work culture.</p></div>
+        <div class="team-member"><div class="avatar"><img src="https://via.placeholder.com/150" alt="Michael Brown"></div><h4>Michael Brown</h4><p class="role">Product Manager</p><p data-i18n="team_pm">Delivering impactful products.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Culture and Values Section -->
+  <section class="culture-values-section fade-up">
+    <h2 data-i18n="culture_title">Our Culture & Values</h2>
+    <div class="culture-wrapper">
+      <div class="image-gallery">
+        <div class="card"><img src="https://via.placeholder.com/200" alt="Team Collaboration" /><p data-i18n="culture_collab">Team Collaboration</p></div>
+        <div class="card"><img src="https://via.placeholder.com/200" alt="Creative Brainstorming" /><p data-i18n="culture_brainstorm">Creative Brainstorming</p></div>
+        <div class="card"><img src="https://via.placeholder.com/200" alt="Office Environment" /><p data-i18n="culture_office">Office Environment</p></div>
+        <div class="card"><img src="https://via.placeholder.com/200" alt="Annual Retreat" /><p data-i18n="culture_retreat">Annual Retreat</p></div>
+        <div class="card"><img src="https://via.placeholder.com/200" alt="Hackathon Event" /><p data-i18n="culture_hackathon">Hackathon Event</p></div>
+        <div class="card"><img src="https://via.placeholder.com/200" alt="Client Workshop" /><p data-i18n="culture_workshop">Client Workshop</p></div>
+      </div>
+      <div class="values-cards">
+        <div class="value-box"><span class="material-icons-outlined icon">science</span><h4 data-i18n="value_innovation">Innovation</h4><p data-i18n="value_innovation_text">Creative tech-first thinking always.</p></div>
+        <div class="value-box"><span class="material-icons-outlined icon">group</span><h4 data-i18n="value_clientfocus">Client Focus</h4><p data-i18n="value_clientfocus_text">We exist to serve and grow with our clients.</p></div>
+        <div class="value-box"><span class="material-icons-outlined icon">diversity_3</span><h4 data-i18n="value_teamwork">Teamwork</h4><p data-i18n="value_teamwork_text">We build together with unity and trust.</p></div>
+        <div class="value-box"><span class="material-icons-outlined icon">verified_user</span><h4 data-i18n="value_integrity">Integrity</h4><p data-i18n="value_integrity_text">Transparency and ethics in every step.</p></div>
+        <div class="value-box"><span class="material-icons-outlined icon">school</span><h4 data-i18n="value_learning">Learning</h4><p data-i18n="value_learning_text">Always growing, always evolving.</p></div>
+        <div class="value-box"><span class="material-icons-outlined icon">stars</span><h4 data-i18n="value_impact">Impact</h4><p data-i18n="value_impact_text">We make a difference with every project.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta-section fade-up">
+    <div class="cta-content">
+      <h2 data-i18n="cta_title">Ready to Transform Your Digital Presence?</h2>
+      <p data-i18n="cta_text">Partner with NTS Website Redesign to build an outstanding user-centric experience.</p>
+      <div class="cta-buttons">
+        <a href="#" class="btn primary" data-i18n="cta_btn_services">Our Services</a>
+        <a href="#" class="btn secondary" data-i18n="cta_btn_contact">Get in Touch</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+  </html>
